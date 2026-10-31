@@ -16,7 +16,7 @@ Built with plain HTML and CSS as part of DevOps Fundamentals, Assignment 01.
 | Aleena Asif | aleena-coded | Aleen Asif | Home |
 | Muzaffar Ali | username2 | Member | Menu |
 | Talha Atif | username3 | Member | Deals |
-| Syed Ali Jah | username4 | Member | Order |
+| Syed Ali Jah | Code-fever1 | Member | Order |
 | Name 5 | username5 | Member | Feedback |
 
 ## Branches
