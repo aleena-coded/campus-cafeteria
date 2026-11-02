@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Bites - Feedback &amp; Contact</title>
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+  <header>
+    <h1>Campus Bites</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="deals.html">Deals</a></li>
+        <li><a href="order.html">How to Order</a></li>
+        <li><a href="feedback.html" class="active" aria-current="page">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="feedback-page">
+    <section class="hero">
+      <h2>Feedback &amp; Contact</h2>
+      <p>We’d love to hear about your experience at Campus Bites.</p>
+    </section>
+
+    <div class="feedback-layout">
+      <section class="card contact-card" aria-labelledby="contact-title">
+        <h2 id="contact-title">Visit the cafeteria</h2>
+        <p>Stop by the counter to speak with our team.</p>
+
+        <dl class="contact-details">
+          <div>
+            <dt>Location</dt>
+            <dd>Ground Floor, Main Academic Block, University of Central Punjab.</dd>
+          </div>
+          <div>
+            <dt>Opening hours</dt>
+            <dd>Monday to Friday: 8:00 AM - 6:00 PM<br>Saturday: 9:00 AM - 3:00 PM<br>Sunday: Closed</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="card feedback-card" aria-labelledby="feedback-title">
+        <h2 id="feedback-title">Send us feedback</h2>
+        <p class="form-note">This form is a static demo and does not send or store messages.</p>
+        <form>
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit">Submit feedback</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Campus Bites | University of Central Punjab</p>
+  </footer>
+</body>
+</html>

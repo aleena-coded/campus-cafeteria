@@ -206,3 +206,82 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+/* ===== FEEDBACK & CONTACT PAGE ===== */
+.feedback-layout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.feedback-layout h2 {
+  margin-bottom: 0.5rem;
+}
+
+.contact-details {
+  margin-top: 1.5rem;
+}
+
+.contact-details div + div {
+  margin-top: 1rem;
+}
+
+.contact-details dt {
+  color: #b9470b;
+  font-weight: bold;
+}
+
+.contact-details dd {
+  margin-top: 0.2rem;
+}
+
+.form-note {
+  color: #555;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.form-field {
+  margin-bottom: 1rem;
+}
+
+.form-field label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  padding: 0.65rem;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  font: inherit;
+}
+
+.form-field textarea {
+  resize: vertical;
+}
+
+.feedback-card button {
+  background: #d35400;
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  padding: 0.7rem 1rem;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.feedback-card button:hover {
+  background: #b9470b;
+}
+
+@media (max-width: 768px) {
+  .feedback-layout {
+    grid-template-columns: 1fr;
+  }
+}
