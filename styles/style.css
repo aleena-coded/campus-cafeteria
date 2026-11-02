@@ -1,0 +1,287 @@
+/* ===== BASE STYLES ===== */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fff8f0;
+}
+
+header {
+  background: #d35400;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover, nav a.active { text-decoration: underline; }
+
+main { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* ===== HOME PAGE (Team Lead) ===== */
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: #ffe0b2;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.quick-links { text-align: center; margin-top: 2rem; }
+.quick-links a { color: #d35400; font-weight: bold; }
+
+/* ===== DEALS PAGE ===== */
+.deals-page .hero {
+  margin-bottom: 1.5rem;
+}
+
+.daily-special {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  background: #e8f3ec;
+  border-left: 5px solid #347653;
+  border-radius: 8px;
+}
+
+.daily-special h2,
+.section-heading h2 {
+  margin-bottom: 0.35rem;
+}
+
+.deal-label {
+  color: #347653;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.deal-price {
+  color: #b9470b;
+  font-size: 1.35rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.deal-section {
+  margin-bottom: 1rem;
+}
+
+.section-heading {
+  margin-bottom: 1rem;
+}
+
+.deal-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.deal-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 190px;
+  border-top: 4px solid #347653;
+}
+
+.deal-card h3 {
+  margin: 0.25rem 0;
+}
+
+.deal-includes {
+  margin-bottom: 1rem;
+}
+
+.deal-card .deal-price {
+  margin-top: auto;
+}
+
+.deal-note {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  nav ul { flex-direction: column; gap: 0.5rem; }
+  .info-grid { grid-template-columns: 1fr; }
+  .deal-grid { grid-template-columns: 1fr; }
+  .daily-special { align-items: flex-start; flex-direction: column; }
+}
+
+/* ===== ORDER PAGE (Member 3) ===== */
+.order-page h2 {
+  margin-bottom: 1rem;
+}
+
+.order-page a {
+  color: #d35400;
+  font-weight: bold;
+}
+
+.step-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  counter-reset: step;
+  margin-bottom: 2rem;
+}
+
+.step-list li {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-top: 4px solid #d35400;
+  counter-increment: step;
+}
+
+.step-list li::before {
+  content: counter(step);
+  display: inline-block;
+  background: #d35400;
+  color: #fff;
+  font-weight: bold;
+  width: 1.8rem;
+  height: 1.8rem;
+  line-height: 1.8rem;
+  text-align: center;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+.step-list h3 {
+  margin-bottom: 0.35rem;
+}
+
+.order-guidelines .card ul {
+  margin-left: 1.1rem;
+}
+
+.order-guidelines .card li + li {
+  margin-top: 0.35rem;
+}
+
+@media (max-width: 768px) {
+  .step-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== FEEDBACK & CONTACT PAGE ===== */
+.feedback-layout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.feedback-layout h2 {
+  margin-bottom: 0.5rem;
+}
+
+.contact-details {
+  margin-top: 1.5rem;
+}
+
+.contact-details div + div {
+  margin-top: 1rem;
+}
+
+.contact-details dt {
+  color: #b9470b;
+  font-weight: bold;
+}
+
+.contact-details dd {
+  margin-top: 0.2rem;
+}
+
+.form-note {
+  color: #555;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.form-field {
+  margin-bottom: 1rem;
+}
+
+.form-field label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  padding: 0.65rem;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  font: inherit;
+}
+
+.form-field textarea {
+  resize: vertical;
+}
+
+.feedback-card button {
+  background: #d35400;
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  padding: 0.7rem 1rem;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.feedback-card button:hover {
+  background: #b9470b;
+}
+
+@media (max-width: 768px) {
+  .feedback-layout {
+    grid-template-columns: 1fr;
+  }
+}
